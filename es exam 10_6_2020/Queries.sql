@@ -25,7 +25,7 @@ where TotRicavi >= all(select lr1.TotRicavi
                        where lr.Codice <> lr1.codice and lr.Tipo = lr1.Tipo);
 
 
---## Esonero SQL V1 ##
+--## Esonero SQL V2 ##
 --ES A
 select distinct u.Email
 from ordine o join ristorante r on (o.Ristorante = r.Codice)
