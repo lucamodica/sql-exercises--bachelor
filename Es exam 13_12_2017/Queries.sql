@@ -7,7 +7,8 @@ from brano b
 where p1.Citta = 'Torino' and p2.Citta = 'Torino' and p3.Citta = 'Torino'
  and p1.Durata < b.Durata and p2.Durata < b.Durata and p3.Durata < b.Durata;
 
---ES (soluzione alternativa)
+
+--ES (soluzione dell'esame)
 select b.Codice, b.Titolo, b.Artista
 from brano b join passaggio p on (b.Codice = p.CodiceBrano)
 where p.Durata < b.Durata and p.Citta = 'Torino'
